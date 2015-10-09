@@ -1,0 +1,16 @@
+<h1>BootCamp 2015</h1>
+<h2>Trends</h2>
+
+<a href="#" class="btn btn-primary btn-lg">Home</a>
+<a href="#search" class="btn btn-info btn-lg">Search</a>
+
+<ul id="timelineList" ng-repeat="y in trendsList">
+  <li ng-repeat="x in y.trends">
+    <div class="tweet" ng-click="go('/trendsdetails', x)">
+
+    	{{x.name}}
+    
+
+    </div>
+  </li>
+</ul>

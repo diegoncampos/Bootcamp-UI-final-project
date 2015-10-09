@@ -1,0 +1,25 @@
+{
+  "name": "final",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.0.6",
+    "twit": "^1.1.18"
+  },
+  "devDependencies": {},
+  "description": "## Final Project: Twitter Based App",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoncampos/Bootcamp-UI-final-project.git"
+  },
+  "author": "Diego Nahuel Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegoncampos/Bootcamp-UI-final-project/issues"
+  },
+  "homepage": "https://github.com/diegoncampos/Bootcamp-UI-final-project#readme"
+}

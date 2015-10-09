@@ -1,0 +1,18 @@
+<h1>BootCamp 2015</h1>
+<h2>Search</h2>
+
+<a href="#" class="btn btn-primary btn-lg">Home</a> <br><br>
+
+<input type="text" id="search" ng-model="search" placeholder="Search" ng-keyup="$event.keyCode == 13 ? searching() : null"><br>
+
+
+<ul id="timelineList">
+  <li ng-repeat="x in searchList.statuses">
+    <div class="tweet" ng-click="go('/tweetdetails', x)">
+
+    <h5 id="username">{{ x.user.name }}</h5>
+    <h6>{{ x.text }}</h6>    
+
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,35 @@
+<h1>BootCamp 2015</h1>
+<h2>Tweet Details</h2>
+
+
+<a href="#" class="btn btn-primary btn-lg">Home</a>
+<a href="#trends" class="btn btn-danger btn-lg">Trends</a>
+<a href="#search" class="btn btn-info btn-lg">Search</a>
+
+
+<div id="tweet_details" class="tweet">
+
+
+	<h4 class="text-warning">
+		<img ng-src="{{tweet.user.profile_image_url}}"  width="40" height="40" >
+		<a ng-href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank" id="userName">   {{ tweet.user.name }} </a>
+	</h4>
+
+	<h6>{{ tweet.text }}</h6>
+	Retweeted: {{tweet.retweet_count}} - Favorites: {{tweet.favorite_count}}
+	<br>
+	
+	<img ng-if="team.logo" ng-src="{{tweet.entities.media[0].media_url}}" width="300" class="imgZoom">
+	<img ng-hide="team.logo" ng-src="{{tweet.entities.media[0].media_url}}" width="300" class="imgZoom">
+
+
+	<br>
+	{{tweet.user.screen_name}}<br>
+	{{tweet.user.location}}<br>
+	{{tweet.user.description}}<br>
+	<a href="http://{{tweet.user.entities.url.urls[0].display_url}}">{{tweet.user.entities.url.urls[0].display_url}}</a>
+
+
+</div>
+
+
